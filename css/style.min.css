@@ -151,7 +151,7 @@ input[type="submit"] {
     min-width: 170px;
     min-height: 3.125rem;
     border-radius: 1.5rem;
-    color: var(--bs-white); 
+    color: var(--bs-black); 
     font-size: 0.875rem; 
     line-height: 1.813rem;
     text-transform: uppercase;
@@ -163,7 +163,7 @@ input[type="submit"] {
 button[type="submit"]:hover,
 input[type="submit"]:hover {
     background: var(--bs-white);
-    color: #203e5b;
+    color: var(--bs-black);
 } 
 
 .site-holder { padding: 1.25rem; width: 100%; background: var(--dark-green-color);}
@@ -399,6 +399,9 @@ input[type="submit"]:hover {
 #hero-section {padding-block: 60px;}
 @media (max-width:1200px){
     #hero-section {padding: 30px 15px;}
+}
+@media (max-width:767px){
+    .card_strip {display: none;}
 }
 .hero-slider { 
     width: 100%;
@@ -861,21 +864,18 @@ input[type="submit"]:hover {
     width: 2.125rem;
     height: 100%;
     font-size: 2.375rem;
-    line-height: 2.8125rem;
-    vertical-align: middle;
+    line-height: 2.8125rem; 
 }
-.site-number h5 {
+.site-number h3 {
     color: #0a2b4a;
     font-size: 1.688rem;
     line-height: 1.875rem;
 }
-.site-number h5,
-.site-number p {
-    font-weight: 700;
+.site-number h3,
+.site-number p { 
     margin: 0;
     padding: 0;
-    display: block;
-    width: 100%;
+    display: block; 
 }
 .site-number p {
     color: #6c6b6b;

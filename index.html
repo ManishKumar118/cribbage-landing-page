@@ -18,20 +18,16 @@
     <meta name="theme-color" content="#000">
     <title>Cribagge Cards</title>
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font-Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" /> 
-    <!-- Swipper -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Load Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <!-- Google font Source Sans Pro -->
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+
+    <!-- Combine Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -62,7 +58,7 @@
                                 <div class="site-logo">
                                     <a href="index.html">
                                         <img src="images/logo.png" alt="Cribbage" width="160" height="77"
-                                            class="img-fluid">
+                                            class="img-fluid lazy-load">
                                     </a>
                                 </div>
                                 <!-- END LOGO -->
@@ -106,7 +102,7 @@
                     <div class="position-absolute bg_hero"
                         style="background-image: url(images/hero_bg.jpg); background-size: cover;"></div>
                     <div class="position-absolute card_strip">
-                        <img src="images/card_strip.png" class="img-fluid w-100" width="1200" height="300">
+                        <img src="images/card_strip.png" alt="Strip" width="1200" height="300" class="img-fluid w-100 lazy-load" >
                     </div>
                     <div class="container">
                         <div class="swiper-container hero-slider">
@@ -125,7 +121,7 @@
                                         <div class="col-lg-5">
                                             <figure class="d-block text-center">
                                                 <img src="images/cribbage-slide1.png" alt="Cribbage" width="310"
-                                                    height="626" class="w-100 img-fluid">
+                                                    height="626" class="w-100 img-fluid lazy-load">
                                             </figure>
                                         </div>
                                     </div>
@@ -146,7 +142,7 @@
                                         <div class="col-lg-5">
                                             <figure class="d-block text-center">
                                                 <img src="images/cribbage-slide2.png" alt="Cribbage" width="310"
-                                                    height="626" class="w-100 img-fluid">
+                                                    height="626" class="w-100 img-fluid lazy-load">
                                             </figure>
                                         </div>
                                     </div>
@@ -182,20 +178,20 @@
 
                 <a href="https://apps.apple.com/us/app/cribbage-pegboard/id906444598" target="_blank">
                     <i><img src="images/icons/app-store.svg" alt="App Icon" width="50" height="50"
-                            class="img-fluid"></i>
+                            class="img-fluid lazy-load"></i>
                     <div class="store_group">
                         <span>Available on the</span>
-                        <h6 class="h4">iOS App Store</h6>
+                        <h3 class="h4">iOS App Store</h3>
                     </div>
                 </a>
 
                 <a href="https://play.google.com/store/apps/details?id=com.gamesbypost.cribbagepegboard"
                     target="_blank">
                     <i><img src="images/icons/play-store.svg" alt="Google Icon" width="50" height="50"
-                            class="img-fluid"></i>
+                            class="img-fluid lazy-load"></i>
                     <div class="store_group">
                         <span>Available on the</span>
-                        <h6 class="h4">Google Store</h6>
+                        <h3 class="h4">Google Store</h3>
                     </div>
                 </a>
             </div>
@@ -211,21 +207,21 @@
                     <div class="row gx-md-5">
                         <div class="col-12 col-sm-4">
                             <div class="features move"> 
-                                <figure><span><img src="images/icons/pegboard-icon.svg" alt="Digital Pegboard" width="21"></span></figure>
+                                <figure><span><img src="images/icons/pegboard-icon.svg" alt="Digital Pegboard" width="21" height="36" class="lazy-load"></span></figure>
                                 <h3 class="h4">Digital Pegboard</h3>                                
                                 <p>No need for a physical pegboard—track your Cribbage scores digitally with intuitive drag-and-drop functionality for pegs.</p>
                             </div>
                         </div>
                         <div class="col-12 col-sm-4"> 
                             <div class="features">
-                                <figure><span><img src="images/icons/one-vs-one.svg" alt="One vs One" width="21"></span></figure>
+                                <figure><span><img src="images/icons/one-vs-one.svg" alt="One vs One" width="21" height="36" class="lazy-load"></span></figure>
                                 <h3 class="h4">One vs One</h3>
                                 <p>Play against real opponents, either friends or random players from around the world.</p>
                             </div>
                         </div>
                         <div class="col-12 col-sm-4"> 
                             <div class="features move">
-                                <figure><span><img src="images/icons/offline-icon.svg" alt="Offline Mode" width="21"></span></figure>
+                                <figure><span><img src="images/icons/offline-icon.svg" alt="Offline Mode" width="21" height="36" class="lazy-load"></span></figure>
                                 <h3 class="h4">Offline Mode</h3>
                                 <p>This apps also provide an offline mode where you can play against AI when not connected to the internet.</p>
                             </div>
@@ -233,7 +229,7 @@
                         <div class="col-12 text-center"> 
                             <figure class="device d-inline-block">
                                 <img src="images/features-mobile.png" alt="Device" width="620" height="480"
-                                    class="img-fluid">
+                                    class="img-fluid lazy-load">
                             </figure>
 
                         </div>
@@ -259,21 +255,21 @@
                         <!-- BOX -->
                         <div class="section first"> 
                             <figure><img src="images/icons/setup-icon.svg" alt="Set Up the Game" width="45" height="45"
-                                    class="img-fluid"></figure> 
+                                    class="img-fluid lazy-load"></figure> 
                             <h4 class="h5">Set Up the Game</h4> 
                             <p> Use your own physical cards to play the game while the app acts as a digital pegboard to keep score. It supports both 2-player and 3-player configurations.</p>
                         </div>
 
                         <!-- BOX -->
                         <div class="section"> 
-                            <figure><img src="images/icons/score-track-icon.svg" alt="Track Your Scores" width="45" height="45" class="img-fluid"></figure> 
+                            <figure><img src="images/icons/score-track-icon.svg" alt="Track Your Scores" width="45" height="45" class="img-fluid lazy-load"></figure> 
                             <h4 class="h5">Track Your Scores</h4>
                             <p>Drag and drop pegs to record your scores, or let the app handle automatic scoring as you play your hands and peg points. The app keeps a visual display of the board so you can focus on your strategy.</p>
                         </div>
 
                         <!-- BOX -->
                         <div class="section">
-                            <figure><img src="images/icons/strategize -icon.svg" alt="Strategize" width="45" height="45" class="img-fluid"></figure>
+                            <figure><img src="images/icons/strategize -icon.svg" alt="Strategize" width="45" height="45" class="img-fluid lazy-load"></figure>
                             <h4 class="h5">Strategize Using Discard Analyzer</h4>
                             <p>Use the Discard Analyzer to get insights into your discards. It calculates the minimum, maximum, and average score for each possible discard, helping you improve your chances to win.</p>
                         </div>
@@ -283,7 +279,7 @@
                     <div class="col-12 col-sm-12 col-md-6">
                         <!-- DEVICE -->
                         <figure class="device">
-                            <img src="images/how-it-works-device.png" alt="Device">
+                            <img src="images/how-it-works-device.png" alt="Device" class="img-fluid lazy-load" width="607" height="648">
                         </figure>
                     </div>
                 </div>
@@ -302,49 +298,49 @@
                 <div class="position-relative">
 
                     <div id="quick-view-slider" class="swiper-container overflow-hidden">
-                        <ul class="swiper-wrapper">
+                        <div class="swiper-wrapper">
 
-                            <li class="swiper-slide">
+                            <div class="swiper-slide">
                                 <figure>
-                                    <img src="images/screenshots/screen1.png" alt="Screen" width="230" height="498">
+                                    <img src="images/screenshots/screen1.png" alt="Screen" width="230" height="498" class="img-fluid lazy-load">
                                 </figure>
-                            </li>
+                            </div>
 
-                            <li class="swiper-slide">
+                            <div class="swiper-slide">
                                 <figure>
-                                    <img src="images/screenshots/screen2.png" alt="Screen" width="230" height="498">
+                                    <img src="images/screenshots/screen2.png" alt="Screen" width="230" height="498" class="img-fluid lazy-load">
                                 </figure>
-                            </li>
+                            </div>
 
-                            <li class="swiper-slide">
+                            <div class="swiper-slide">
                                 <figure>
-                                    <img src="images/screenshots/screen3.png" alt="Screen" width="230" height="498">
+                                    <img src="images/screenshots/screen3.png" alt="Screen" width="230" height="498" class="img-fluid lazy-load">
                                 </figure>
-                            </li>
+                            </div>
 
-                            <li class="swiper-slide">
+                            <div class="swiper-slide">
                                 <figure>
-                                    <img src="images/screenshots/screen4.png" alt="Screen" width="230" height="498">
+                                    <img src="images/screenshots/screen4.png" alt="Screen" width="230" height="498" class="img-fluid lazy-load">
                                 </figure>
-                            </li>
+                            </div>
 
-                            <li class="swiper-slide">
+                            <div class="swiper-slide">
                                 <figure>
-                                    <img src="images/screenshots/screen5.png" alt="Screen" width="230" height="498">
+                                    <img src="images/screenshots/screen5.png" alt="Screen" width="230" height="498" class="img-fluid lazy-load">
                                 </figure>
-                            </li>
-                            <li class="swiper-slide">
+                            </div>
+                            <div class="swiper-slide">
                                 <figure>
-                                    <img src="images/screenshots/screen6.png" alt="Screen" width="230" height="498">
+                                    <img src="images/screenshots/screen6.png" alt="Screen" width="230" height="498" class="img-fluid lazy-load">
                                 </figure>
-                            </li>
-                            <li class="swiper-slide">
+                            </div>
+                            <div class="swiper-slide">
                                 <figure>
-                                    <img src="images/screenshots/screen7.png" alt="Screen" width="230" height="498">
+                                    <img src="images/screenshots/screen7.png" alt="Screen" width="230" height="498" class="img-fluid lazy-load">
                                 </figure>
-                            </li>
+                            </div>
 
-                        </ul>
+                        </div>
                     </div>
 
                     <div class="arrows swiper2-prev swiper-button-prev">
@@ -368,60 +364,54 @@
 
         <!-- TESTIMONIAL -->
         <section class="spacer-100 site-testimonial" id="site-testimonial">
-            <div class="container position-relative">
+            <div class="container">
 
                 <div class="text-center title-h2">
                     <h2 class="h2">Our Top <span class="text-orange">Testimonial</span></h2>
                 </div>
 
-                <div class="swiper-container overflow-hidden" id="testimonial-slider">
-
-                    <!-- Additional required wrapper -->
-                    <ul class="swiper-wrapper text-center">
-                        <li class="swiper-slide">
-                            <!-- image -->
-                            <figure>
-                                <img src="images/male-avtar.svg" alt="User">
-                            </figure>
+                <div class="swiper-container overflow-hidden position-relative" id="testimonial-slider">
  
+                    <div class="swiper-wrapper text-center">
+                        <div class="swiper-slide"> 
+                            <figure>
+                                <img src="images/male-avtar.svg" width="80" height="80" alt="User" class="img-fluid lazy-load">
+                            </figure>
                             <p>
                                 Excellent crib board. Very simple to use with the ability to see the 'leader's score'. An added bonus with this app is the fact that advertisements are not intusive.
                             </p> 
-                            <h6 class="h6">- Michael Kelly</h6>
-                        </li>
-                        <!-- slide 2 -->
-                        <li class="swiper-slide">
-                            <!-- image -->
+                            <h3 class="h6">- Michael Kelly</h3>
+                        </div>
+                       
+                        <div class="swiper-slide"> 
                             <figure>
-                                <img src="images/male-avtar.svg" alt="User" width="100">
+                                <img src="images/male-avtar.svg" alt="User" width="80" height="80" class="img-fluid lazy-load">
                             </figure> 
                             <p>
                                 Thank you so much for creating this app my grandfather taught me how to play and I have loved the game since he has since passed and you have the only smooth working cribbage game
-                            </p> 
-                            <!-- user name -->
-                            <h6 class="h6">- William Quinn</h6>
-                        </li>
-                        <!-- slide 3 -->
-                        <li class="swiper-slide">
+                            </p>  
+                            <h3 class="h6">- William Quinn</h3>
+                        </div>
+                        
+                        <div class="swiper-slide">
                             <figure>
-                                <img src="images/female-avtar.svg" alt="User" width="100">
+                                <img src="images/female-avtar.svg" alt="User" width="80" height="80" class="img-fluid lazy-load">
                             </figure>
                             <p>
                                 Love having the scoreboard, so I can have cards without needing to have a board to play games with friends!
                             </p>
-                            <h6 class="h6">- Catherine Yost</h6>
-                        </li>
-                        <!-- slide 3 -->
-                        <li class="swiper-slide">
-                            <!-- image -->
+                            <h3 class="h6">- Catherine Yost</h3>
+                        </div>
+                  
+                        <div class="swiper-slide"> 
                             <figure>
-                                <img src="images/female-avtar.svg" alt="User" width="100">
+                                <img src="images/female-avtar.svg" alt="User" width="80" height="80" class="img-fluid lazy-load">
                             </figure>
                             <p>
                                 OFFLINE MODE SUPPORTED! And it saves your game if you exit! Since nobody said anything about it and I know I wasnt the only one wondering. 5 stars! Bravo!
                             </p>
-                            <h6 class="h6">- Keren Schumow Carter</h6>
-                        </li>
+                            <h3 class="h6">- Keren Schumow Carter</h3>
+                        </div>
                     </ul>
                 </div>
 
@@ -452,7 +442,7 @@
                         <!-- number -->
                         <div class="site-number"> 
                             <i class="fa fa-cloud-download"></i> 
-                            <h5 class="counter-count">100 <span>K</span></h5> 
+                            <h3 class="counter-count">100 <span>K</span></h3> 
                             <p>App Download</p>
                         </div>
                         <!-- end -->
@@ -461,7 +451,7 @@
                         <!-- number -->
                         <div class="site-number"> 
                             <i class="fa fa-thumbs-up"></i> 
-                            <h5 class="counter-count">4.6</h5> 
+                            <h3 class="counter-count">4.6</h3> 
                             <p>User Rating</p>
                         </div>
                         <!-- end -->
@@ -470,7 +460,7 @@
                         <!-- number -->
                         <div class="site-number"> 
                             <i class="fa fa-users"></i> 
-                            <h5 class="counter-count">4+ </h5> 
+                            <h3 class="counter-count">4+ </h3> 
                             <p>Game Age</p>
                         </div>
                         <!-- end -->
@@ -479,7 +469,7 @@
                         <!-- number -->
                         <div class="site-number"> 
                             <i class="fa fa-dollar"></i> 
-                            <h5 class="counter-count">Free</h5> 
+                            <h3 class="counter-count">Free</h3>
                             <p>Price</p>
                         </div>
                         <!-- end -->
@@ -608,17 +598,17 @@
                         <!-- LOGO -->
                         <div class="site-logo">
                             <a href="/index.html">
-                                <img src="images/logo.png" alt="Cribbage" width="150" height="70" class="img-fluid">
+                                <img src="images/logo.png" alt="Cribbage" width="150" height="70" class="img-fluid lazy-load">
                             </a>
                         </div>
                         <!-- END LOGO -->
 
                         <!-- SOCIAL ICONS -->
                         <div class="site-social-icons">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-youtube"></i></a>
+                            <a href="https://faceboook.com" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="https://x.com/" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/" target="_blank" title="Youtube"><i class="fa fa-youtube"></i></a>
                         </div>
                         <!-- END SOCIAL ICONS -->
 
@@ -640,12 +630,19 @@
     <!-- END WRAPPER -->
 
     <!-- SCRIPTS -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        crossorigin="anonymous"></script>
-    <script src="js/custom.js"></script>
-
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script> -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/17.5.0/lazyload.min.js"></script>
+    <script defer src="js/custom.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var lazyLoadInstance = new LazyLoad({
+                elements_selector: ".lazy-load"
+            });
+        });
+    </script>
 </body>
 
 </html>

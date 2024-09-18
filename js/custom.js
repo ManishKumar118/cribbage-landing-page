@@ -14,46 +14,85 @@ function stickyHeader() {
 }
 
 // Scroll to section
-$(document).ready(function() {
-    // Function to handle smooth scrolling
-    function scrollToSection(sectionID) {
+$(document).ready(function () {
+  // Function to handle smooth scrolling
+  function scrollToSection(sectionID) {
       $('html, body').animate({
-        scrollTop: $(sectionID).offset().top - 70
+          scrollTop: $(sectionID).offset().top - 70
       }, 1000); // Smooth scroll to the target section
-    }
-  
-    // Handling clicks on .scroll-link
-    $('.scroll-link').click(function(event) {
+  }
+
+  // Handling clicks on .scroll-link
+  $('.scroll-link').click(function (event) {
       event.preventDefault(); // Prevent default link behavior
-  
+
       // Get the target section from the data attribute
       var targetSection = $(this).data('target');
-  
+
       // Remove 'active' class from all scroll-link elements
       $('.scroll-link').removeClass('active');
       // Add 'active' class to the clicked element
       $(this).addClass('active');
-  
+
       // If already on the home page
       if (window.location.pathname === '/' || window.location.pathname.endsWith('/')) {
-        // Scroll smoothly to the section on the same page
-        scrollToSection(targetSection);
+          // Scroll smoothly to the section on the same page
+          scrollToSection(targetSection);
       } else {
-        // If on a different page, store the target section and redirect
-        localStorage.setItem('scrollTarget', targetSection);
-        window.location.href = '/projects/cribbage/'; // Redirect to home page
+          // If on a different page, store the target section and redirect
+          localStorage.setItem('scrollTarget', targetSection);
+          window.location.href = '/projects/cribbage/'; // Redirect to home page
       }
-    });
-  
-    // On page load, check if a section is stored in localStorage for scrolling
-    var storedSection = localStorage.getItem('scrollTarget');
-    if (storedSection) {
+  });
+
+  // On page load, check if a section is stored in localStorage for scrolling
+  var storedSection = localStorage.getItem('scrollTarget');
+  if (storedSection) {
       // Scroll to the stored section
       scrollToSection(storedSection);
       // Clear the stored section after scrolling
       localStorage.removeItem('scrollTarget');
-    }
+  }
+
+  // Using IntersectionObserver to detect when sections are in the viewport
+  const sections = document.querySelectorAll('.scroll-link');
+
+  const options = {
+      root: null, // Use the viewport
+      rootMargin: '0px',
+      threshold: 0.5 // Trigger when 50% of the section is in view
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              // Highlight the corresponding link
+              const id = entry.target.getAttribute('id');
+              $('.scroll-link').removeClass('active');
+              $(`a[data-target="#${id}"]`).addClass('active');
+          }
+      });
+  }, options);
+
+  // Attach observer to each section
+  $('.scroll-link').each(function () {
+      const targetSection = $(this).data('target');
+      const sectionElement = document.querySelector(targetSection);
+      if (sectionElement) {
+          observer.observe(sectionElement);
+      }
   });
+
+  // Check when the user scrolls to the top of the page
+  $(window).on('scroll', function () {
+      if ($(window).scrollTop() === 0) {
+          // User is at the top of the page, highlight "Home"
+          $('.scroll-link').removeClass('active');
+          $('a[href="#main-top"]').addClass('active');
+      }
+  });
+});
+
   
 
  
