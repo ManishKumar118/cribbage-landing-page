@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="description" content="Cribagge Cards">
+    <meta name="author" content="Cribagge">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons//apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicons/favicon.ico">
+    <link rel="manifest" href="images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#000">
+    <title>Cribagge Cards</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font-Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <!-- Swipper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- Google font Source Sans Pro -->
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <div class="wrapper" id="main-top">
+
+        <!-- NAVIGATION AND SLIDER HOLDER -->
+        <section class="site-holder" role="banner">
+
+            <!-- HEADER -->
+            <header class="site-header" id="site-home">
+
+                <!-- STICKY HEADER -->
+                <div class="sticky-header" id="sticky-header">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-8 col-sm-3">
+
+                                <!-- LOGO -->
+                                <div class="site-logo">
+                                    <a href="index.html">
+                                        <img src="images/logo.png" alt="Cribbage" width="160" height="77"
+                                            class="img-fluid">
+                                    </a>
+                                </div>
+                                <!-- END LOGO -->
+
+                            </div>
+                            <div class="col-4 col-sm-9">
+
+                                <!-- NAVIGATION -->
+                                <nav class="site-nav h-100 d-flex align-items-center justify-content-end" id="site-nav"
+                                    role="navigation">
+                                    <!-- MOBILE VIEW BUTTON -->
+                                    <svg id="hamburger" class="Header__toggle-svg" viewbox="0 0 60 40">
+                                        <g stroke="#fff" stroke-width="4" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path id="top-line" d="M10,10 L50,10 Z"></path>
+                                            <path id="middle-line" d="M10,20 L50,20 Z"></path>
+                                            <path id="bottom-line" d="M10,30 L50,30 Z"></path>
+                                        </g>
+                                    </svg>
+                                    <!-- LI362NKS -->
+                                    <ul class="list-unstyled mb-0 d-xl-flex nav-off-canvas">
+                                        <!-- ACTIVE ITEM -->
+                                        <li><a class="scroll-link active" href="#main-top" data-target="#main-top">HOME</a></li>
+                                        <li><a class="scroll-link" href="#amazing-features" data-target="#amazing-features">FEATURES</a></li>
+                                        <li><a class="scroll-link" href="#how-to-play" data-target="#how-to-play">HOW to Play</a></li>
+                                        <!-- <li><a class="scroll-link" href="#site-download">DOWNLOAD</a></li> -->
+                                        <li><a class="scroll-link" href="#site-quick-view" data-target="#site-quick-view">SCREENShots</a></li>
+                                        <li><a class="scroll-link" href="#site-testimonial" data-target="#site-testimonial">TESTIMONIAL</a></li>
+                                        <li><a class="scroll-link" href="#quick-support" data-target="#quick-support">Contact Us</a></li>
+                                    </ul>
+                                </nav>
+                                <!-- END NAVIGATION -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- START SLIDER -->
+                <div id="hero-section" class="position-relative overflow-hidden">
+                    <div class="position-absolute bg_hero"
+                        style="background-image: url(images/hero_bg.jpg); background-size: cover;"></div>
+                    <div class="position-absolute card_strip">
+                        <img src="images/card_strip.png" class="img-fluid w-100" width="1200" height="300">
+                    </div>
+                    <div class="container">
+                        <div class="swiper-container hero-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-7">
+                                            <div class="slider-content">
+                                                <h1 class="h1 mb-2">Welcome to the best Cribbage mobile game</h1>
+                                                <p>Say goodbye to the hassle of physical pegboards. With Cribbage Pegboard, you can keep track of your Cribbage game scores digitally, ensuring accuracy and convenience wherever you play. Perfect for both two and three-player games.</p>
+                                                <div class="d-flex justify-content-start mt-4">
+                                                    <a class="btn btn-md btn-primary" href="#downloads">Download Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5">
+                                            <figure class="d-block text-center">
+                                                <img src="images/cribbage-slide1.png" alt="Cribbage" width="310"
+                                                    height="626" class="w-100 img-fluid">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-7">
+                                            <div class="slider-content">
+                                                <h2 class="h1">Analyze Your Moves</h1>
+                                                    <p>Make smarter decisions with the built-in "Discard Analyzer" feature. It helps you optimize your hand, providing detailed insights into the best discard options and statistics on your chances to win.</p>
+                                                    <div class="d-flex justify-content-start mt-4">
+                                                        <a class="btn btn-md btn-primary" href="#downloads">Download
+                                                            Now</a>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5">
+                                            <figure class="d-block text-center">
+                                                <img src="images/cribbage-slide2.png" alt="Cribbage" width="310"
+                                                    height="626" class="w-100 img-fluid">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- NAVIGATION -->
+                            <div class="arrows swiper-prev swiper-button-prev"><svg width="14" height="18" viewBox="0 0 14 18"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.6917 17.9704C13.7895 17.8968 13.8691 17.7966 13.9229 17.679C13.9768 17.5615 14.0032 17.4305 13.9997 17.2983L13.9997 0.742381C14.0031 0.608867 13.9767 0.476521 13.9229 0.357402C13.8691 0.238283 13.7896 0.136173 13.6917 0.0603735C13.5897 0.012134 13.4788 -0.00766432 13.3685 0.00266231C13.2581 0.0129889 13.1517 0.0531354 13.0582 0.11968L12.5918 0.445858L0.325574 8.35316C0.231679 8.4138 0.152733 8.49979 0.0958835 8.60334C0.0390344 8.7069 0.00607877 8.82474 2.98459e-07 8.94621C0.00525411 9.06805 0.0368413 9.18661 0.0920334 9.29166C0.147226 9.39671 0.224359 9.48508 0.316772 9.54914L12.6358 17.5355L13.0758 17.832C13.1612 17.9085 13.2617 17.961 13.3688 17.985C13.4759 18.0091 13.5866 18.0041 13.6917 17.9704ZM12.1958 15.0052L11.4655 14.5307L3.02696 9.0154L12.1958 3.08492L12.1958 14.9459V15.0052Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                            <div class="arrows swiper-next swiper-button-next"><svg width="14" height="18" viewBox="0 0 14 18"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.308289 0.029579C0.210495 0.103159 0.130935 0.203431 0.0770682 0.320989C0.0232012 0.438548 -0.00321062 0.569543 0.000311288 0.7017V17.2576C-0.00307468 17.3911 0.0233307 17.5235 0.0771219 17.6426C0.130913 17.7617 0.210383 17.8638 0.308289 17.9396C0.410321 17.9879 0.521224 18.0077 0.631543 17.9973C0.741861 17.987 0.84832 17.9469 0.941836 17.8803L1.4082 17.5541L13.6744 9.64684C13.7683 9.5862 13.8473 9.50021 13.9041 9.39666C13.961 9.2931 13.9939 9.17526 14 9.05379C13.9947 8.93195 13.9632 8.81339 13.908 8.70834C13.8528 8.60329 13.7756 8.51492 13.6832 8.45086L1.36421 0.464483L0.924241 0.16796C0.838788 0.0914912 0.738316 0.0390402 0.631183 0.0149721C0.524051 -0.00909609 0.413352 -0.00408915 0.308289 0.029579ZM1.80417 2.99482L2.53451 3.46926L10.973 8.9846L1.80417 14.9151V3.05412V2.99482Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <!-- END HEADER -->
+
+        </section>
+
+        <!-- STORE ICONS -->
+        <section class="position-relative site-store-icons" id="site-download">
+            <div class="d-sm-flex justify-content-center align-items-center g-2 align-center">
+
+                <a href="https://apps.apple.com/us/app/cribbage-pegboard/id906444598" target="_blank">
+                    <i><img src="images/icons/app-store.svg" alt="App Icon" width="50" height="50"
+                            class="img-fluid"></i>
+                    <div class="store_group">
+                        <span>Available on the</span>
+                        <h6 class="h4">iOS App Store</h6>
+                    </div>
+                </a>
+
+                <a href="https://play.google.com/store/apps/details?id=com.gamesbypost.cribbagepegboard"
+                    target="_blank">
+                    <i><img src="images/icons/play-store.svg" alt="Google Icon" width="50" height="50"
+                            class="img-fluid"></i>
+                    <div class="store_group">
+                        <span>Available on the</span>
+                        <h6 class="h4">Google Store</h6>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- AMAZING FEATURES -->
+        <section id="amazing-features" class="spacer-100 position-relative site-amazing-features">
+            <div class="container">
+                <div class="text-center">
+                    <div class="title-h2">
+                        <h2 class="h2">Amazing <span class="text-orange">Features</span></h2>
+                    </div>
+                    <div class="row gx-md-5">
+                        <div class="col-12 col-sm-4">
+                            <div class="features move"> 
+                                <figure><span><img src="images/icons/pegboard-icon.svg" alt="Digital Pegboard" width="21"></span></figure>
+                                <h3 class="h4">Digital Pegboard</h3>                                
+                                <p>No need for a physical pegboard—track your Cribbage scores digitally with intuitive drag-and-drop functionality for pegs.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4"> 
+                            <div class="features">
+                                <figure><span><img src="images/icons/one-vs-one.svg" alt="One vs One" width="21"></span></figure>
+                                <h3 class="h4">One vs One</h3>
+                                <p>Play against real opponents, either friends or random players from around the world.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4"> 
+                            <div class="features move">
+                                <figure><span><img src="images/icons/offline-icon.svg" alt="Offline Mode" width="21"></span></figure>
+                                <h3 class="h4">Offline Mode</h3>
+                                <p>This apps also provide an offline mode where you can play against AI when not connected to the internet.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center"> 
+                            <figure class="device d-inline-block">
+                                <img src="images/features-mobile.png" alt="Device" width="620" height="480"
+                                    class="img-fluid">
+                            </figure>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HOW IT WORKS -->
+        <section class="spacer-100 site-how-it-works" id="how-to-play">
+            <div class="container">
+
+                <div class="text-center title-h2">
+                    <h2 class="h2">How it <span class="text-orange">Play?</span></h2>
+                </div>
+
+                <div class="row align-items-center how-it-content mt-md-4">
+                    <div class="col-12 col-sm-12 col-md-6"> 
+                        <h3 class="h3">How to Play Cribbage with Cribbage Pegboard</h3> 
+                        <p>This concise summary should help users quickly grasp how to use the app alongside their Cribbage game. Let me know if you'd like to tweak this further!
+                        </p>
+
+                        <!-- BOX -->
+                        <div class="section first"> 
+                            <figure><img src="images/icons/setup-icon.svg" alt="Set Up the Game" width="45" height="45"
+                                    class="img-fluid"></figure> 
+                            <h4 class="h5">Set Up the Game</h4> 
+                            <p> Use your own physical cards to play the game while the app acts as a digital pegboard to keep score. It supports both 2-player and 3-player configurations.</p>
+                        </div>
+
+                        <!-- BOX -->
+                        <div class="section"> 
+                            <figure><img src="images/icons/score-track-icon.svg" alt="Track Your Scores" width="45" height="45" class="img-fluid"></figure> 
+                            <h4 class="h5">Track Your Scores</h4>
+                            <p>Drag and drop pegs to record your scores, or let the app handle automatic scoring as you play your hands and peg points. The app keeps a visual display of the board so you can focus on your strategy.</p>
+                        </div>
+
+                        <!-- BOX -->
+                        <div class="section">
+                            <figure><img src="images/icons/strategize -icon.svg" alt="Strategize" width="45" height="45" class="img-fluid"></figure>
+                            <h4 class="h5">Strategize Using Discard Analyzer</h4>
+                            <p>Use the Discard Analyzer to get insights into your discards. It calculates the minimum, maximum, and average score for each possible discard, helping you improve your chances to win.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-6">
+                        <!-- DEVICE -->
+                        <figure class="device">
+                            <img src="images/how-it-works-device.png" alt="Device">
+                        </figure>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- QUICK VIEW -->
+        <section class="site-quick-view spacer-100" id="site-quick-view">
+            <div class="container">
+
+                <div class="text-center title-h2">
+                    <h2 class="h2">Quick <spanc class="text-orange">View</span></h2>
+                </div>
+
+                <div class="position-relative">
+
+                    <div id="quick-view-slider" class="swiper-container overflow-hidden">
+                        <ul class="swiper-wrapper">
+
+                            <li class="swiper-slide">
+                                <figure>
+                                    <img src="images/screenshots/screen1.png" alt="Screen" width="230" height="498">
+                                </figure>
+                            </li>
+
+                            <li class="swiper-slide">
+                                <figure>
+                                    <img src="images/screenshots/screen2.png" alt="Screen" width="230" height="498">
+                                </figure>
+                            </li>
+
+                            <li class="swiper-slide">
+                                <figure>
+                                    <img src="images/screenshots/screen3.png" alt="Screen" width="230" height="498">
+                                </figure>
+                            </li>
+
+                            <li class="swiper-slide">
+                                <figure>
+                                    <img src="images/screenshots/screen4.png" alt="Screen" width="230" height="498">
+                                </figure>
+                            </li>
+
+                            <li class="swiper-slide">
+                                <figure>
+                                    <img src="images/screenshots/screen5.png" alt="Screen" width="230" height="498">
+                                </figure>
+                            </li>
+                            <li class="swiper-slide">
+                                <figure>
+                                    <img src="images/screenshots/screen6.png" alt="Screen" width="230" height="498">
+                                </figure>
+                            </li>
+                            <li class="swiper-slide">
+                                <figure>
+                                    <img src="images/screenshots/screen7.png" alt="Screen" width="230" height="498">
+                                </figure>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="arrows swiper2-prev swiper-button-prev">
+                        <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13.6917 17.9704C13.7895 17.8968 13.8691 17.7966 13.9229 17.679C13.9768 17.5615 14.0032 17.4305 13.9997 17.2983L13.9997 0.742381C14.0031 0.608867 13.9767 0.476521 13.9229 0.357402C13.8691 0.238283 13.7896 0.136173 13.6917 0.0603735C13.5897 0.012134 13.4788 -0.00766432 13.3685 0.00266231C13.2581 0.0129889 13.1517 0.0531354 13.0582 0.11968L12.5918 0.445858L0.325574 8.35316C0.231679 8.4138 0.152733 8.49979 0.0958835 8.60334C0.0390344 8.7069 0.00607877 8.82474 2.98459e-07 8.94621C0.00525411 9.06805 0.0368413 9.18661 0.0920334 9.29166C0.147226 9.39671 0.224359 9.48508 0.316772 9.54914L12.6358 17.5355L13.0758 17.832C13.1612 17.9085 13.2617 17.961 13.3688 17.985C13.4759 18.0091 13.5866 18.0041 13.6917 17.9704ZM12.1958 15.0052L11.4655 14.5307L3.02696 9.0154L12.1958 3.08492L12.1958 14.9459V15.0052Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                    <div class="arrows swiper2-next swiper-button-next"><svg width="14" height="18" viewBox="0 0 14 18" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.308289 0.029579C0.210495 0.103159 0.130935 0.203431 0.0770682 0.320989C0.0232012 0.438548 -0.00321062 0.569543 0.000311288 0.7017V17.2576C-0.00307468 17.3911 0.0233307 17.5235 0.0771219 17.6426C0.130913 17.7617 0.210383 17.8638 0.308289 17.9396C0.410321 17.9879 0.521224 18.0077 0.631543 17.9973C0.741861 17.987 0.84832 17.9469 0.941836 17.8803L1.4082 17.5541L13.6744 9.64684C13.7683 9.5862 13.8473 9.50021 13.9041 9.39666C13.961 9.2931 13.9939 9.17526 14 9.05379C13.9947 8.93195 13.9632 8.81339 13.908 8.70834C13.8528 8.60329 13.7756 8.51492 13.6832 8.45086L1.36421 0.464483L0.924241 0.16796C0.838788 0.0914912 0.738316 0.0390402 0.631183 0.0149721C0.524051 -0.00909609 0.413352 -0.00408915 0.308289 0.029579ZM1.80417 2.99482L2.53451 3.46926L10.973 8.9846L1.80417 14.9151V3.05412V2.99482Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- TESTIMONIAL -->
+        <section class="spacer-100 site-testimonial" id="site-testimonial">
+            <div class="container position-relative">
+
+                <div class="text-center title-h2">
+                    <h2 class="h2">Our Top <span class="text-orange">Testimonial</span></h2>
+                </div>
+
+                <div class="swiper-container overflow-hidden" id="testimonial-slider">
+
+                    <!-- Additional required wrapper -->
+                    <ul class="swiper-wrapper text-center">
+                        <li class="swiper-slide">
+                            <!-- image -->
+                            <figure>
+                                <img src="images/male-avtar.svg" alt="User">
+                            </figure>
+ 
+                            <p>
+                                Excellent crib board. Very simple to use with the ability to see the 'leader's score'. An added bonus with this app is the fact that advertisements are not intusive.
+                            </p> 
+                            <h6 class="h6">- Michael Kelly</h6>
+                        </li>
+                        <!-- slide 2 -->
+                        <li class="swiper-slide">
+                            <!-- image -->
+                            <figure>
+                                <img src="images/male-avtar.svg" alt="User" width="100">
+                            </figure> 
+                            <p>
+                                Thank you so much for creating this app my grandfather taught me how to play and I have loved the game since he has since passed and you have the only smooth working cribbage game
+                            </p> 
+                            <!-- user name -->
+                            <h6 class="h6">- William Quinn</h6>
+                        </li>
+                        <!-- slide 3 -->
+                        <li class="swiper-slide">
+                            <figure>
+                                <img src="images/female-avtar.svg" alt="User" width="100">
+                            </figure>
+                            <p>
+                                Love having the scoreboard, so I can have cards without needing to have a board to play games with friends!
+                            </p>
+                            <h6 class="h6">- Catherine Yost</h6>
+                        </li>
+                        <!-- slide 3 -->
+                        <li class="swiper-slide">
+                            <!-- image -->
+                            <figure>
+                                <img src="images/female-avtar.svg" alt="User" width="100">
+                            </figure>
+                            <p>
+                                OFFLINE MODE SUPPORTED! And it saves your game if you exit! Since nobody said anything about it and I know I wasnt the only one wondering. 5 stars! Bravo!
+                            </p>
+                            <h6 class="h6">- Keren Schumow Carter</h6>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- NAVIGATION -->
+                <div class="arrows swiper3-prev swiper-button-prev">
+                    <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13.6917 17.9704C13.7895 17.8968 13.8691 17.7966 13.9229 17.679C13.9768 17.5615 14.0032 17.4305 13.9997 17.2983L13.9997 0.742381C14.0031 0.608867 13.9767 0.476521 13.9229 0.357402C13.8691 0.238283 13.7896 0.136173 13.6917 0.0603735C13.5897 0.012134 13.4788 -0.00766432 13.3685 0.00266231C13.2581 0.0129889 13.1517 0.0531354 13.0582 0.11968L12.5918 0.445858L0.325574 8.35316C0.231679 8.4138 0.152733 8.49979 0.0958835 8.60334C0.0390344 8.7069 0.00607877 8.82474 2.98459e-07 8.94621C0.00525411 9.06805 0.0368413 9.18661 0.0920334 9.29166C0.147226 9.39671 0.224359 9.48508 0.316772 9.54914L12.6358 17.5355L13.0758 17.832C13.1612 17.9085 13.2617 17.961 13.3688 17.985C13.4759 18.0091 13.5866 18.0041 13.6917 17.9704ZM12.1958 15.0052L11.4655 14.5307L3.02696 9.0154L12.1958 3.08492L12.1958 14.9459V15.0052Z"
+                            fill="white" />
+                    </svg>
+                </div>
+                <div class="arrows swiper3-next swiper-button-next"><svg width="14" height="18" viewBox="0 0 14 18" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.308289 0.029579C0.210495 0.103159 0.130935 0.203431 0.0770682 0.320989C0.0232012 0.438548 -0.00321062 0.569543 0.000311288 0.7017V17.2576C-0.00307468 17.3911 0.0233307 17.5235 0.0771219 17.6426C0.130913 17.7617 0.210383 17.8638 0.308289 17.9396C0.410321 17.9879 0.521224 18.0077 0.631543 17.9973C0.741861 17.987 0.84832 17.9469 0.941836 17.8803L1.4082 17.5541L13.6744 9.64684C13.7683 9.5862 13.8473 9.50021 13.9041 9.39666C13.961 9.2931 13.9939 9.17526 14 9.05379C13.9947 8.93195 13.9632 8.81339 13.908 8.70834C13.8528 8.60329 13.7756 8.51492 13.6832 8.45086L1.36421 0.464483L0.924241 0.16796C0.838788 0.0914912 0.738316 0.0390402 0.631183 0.0149721C0.524051 -0.00909609 0.413352 -0.00408915 0.308289 0.029579ZM1.80417 2.99482L2.53451 3.46926L10.973 8.9846L1.80417 14.9151V3.05412V2.99482Z"
+                            fill="white" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- STATISTIC -->
+        <section class="position-relative spacer-70 site-statistic" id="site-statistic">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-6 col-md-3">
+                        <!-- number -->
+                        <div class="site-number"> 
+                            <i class="fa fa-cloud-download"></i> 
+                            <h5 class="counter-count">100 <span>K</span></h5> 
+                            <p>App Download</p>
+                        </div>
+                        <!-- end -->
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <!-- number -->
+                        <div class="site-number"> 
+                            <i class="fa fa-thumbs-up"></i> 
+                            <h5 class="counter-count">4.6</h5> 
+                            <p>User Rating</p>
+                        </div>
+                        <!-- end -->
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <!-- number -->
+                        <div class="site-number"> 
+                            <i class="fa fa-users"></i> 
+                            <h5 class="counter-count">4+ </h5> 
+                            <p>Game Age</p>
+                        </div>
+                        <!-- end -->
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <!-- number -->
+                        <div class="site-number"> 
+                            <i class="fa fa-dollar"></i> 
+                            <h5 class="counter-count">Free</h5> 
+                            <p>Price</p>
+                        </div>
+                        <!-- end -->
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- QUICK SUPPORT -->
+        <section id="quick-support" class="spacer-100 site-quick-support">
+
+            <div class="container text-center">
+                <div class="text-center title-h2">
+                    <h2 class="h2">Contact <span class="text-orange">Us</span></h2>
+                </div>
+
+                <!-- INFO -->
+                <div class="d-md-flex site-info">
+
+                    <!-- BOX -->
+                    <a href="tel:+91 123 456 7890" class="site-box">
+                        <figure><i class="fa fa-phone"></i></figure>
+                        <p>+91 123 456 7890</p>
+                    </a>
+
+                    <!-- BOX -->
+                    <a target="_blank" href="http://maps.google.com/?q=Location, 125 Business Evenue, Huston, USA"
+                        class="site-box">
+                        <!-- ICON -->
+                        <figure><i class="fa fa-map-marker"></i></figure>
+                        <address>Location, 125 Business Evenue, Huston, USA</address>
+                    </a>
+
+                    <!-- BOX -->
+                    <a href="mailto:millerair@hotmail.com" class="site-box last">
+                        <figure><i class="fa fa-envelope"></i></figure>
+                        <p>millerair@hotmail.com</p>
+                    </a>
+
+                </div>
+
+                <!-- CONTACT FORM -->
+                <form action="php/form.php" method="post" class="site-contact-form" id="myForm">
+
+                    <div class="row gx-2">
+                        <div class="col-md-8">
+                            <div class="row gx-2">
+                                <div class="col-md-6">
+                                    <div class="form-group mb-2">
+                                        <input class="app-btn value-clear" type="text" name="app_name"
+                                            placeholder="Name" required="required">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group mb-2">
+                                        <input class="app-btn value-clear" type="email" name="app_email"
+                                            placeholder="Email" required="required">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group mb-2">
+                                        <input class="app-btn value-clear" type="tel" name="app_phone"
+                                            placeholder="Phone" required="required">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group mb-2">
+                                        <input class="app-btn value-clear" type="url" name="app_website"
+                                            placeholder="Website">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group mb-2">
+                                <textarea class="app-btn value-clear" name="app_message" placeholder="Message"
+                                    required="required"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-12 text-center mt-2">
+                            <button id="form-submit-btn" class="app-btn" type="submit">Submit <i
+                                    class="fa fa-spin fa-spinner"></i></button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+        </section>
+
+        <!-- SUBSCRIBE -->
+        <!-- <section class="site-subscribe">
+            <div class="container"> 
+                <div class="site-box">
+                    <div class="row gx-0 align-items-center">
+                        <div class="col-12 col-sm-12 col-md-5 col-lg-6"> 
+                            <p>Subscribe to our Newsletter</p>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-7 col-lg-6">
+ 
+                            <form action="#" method="post" class="site-form">
+                                <label>
+                                    <input type="email" placeholder="" required="required">
+                                </label>
+                                <input type="submit" value="SUBMIT">
+                            </form> 
+                             
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- FOOTER -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+
+                        <!-- LOGO -->
+                        <div class="site-logo">
+                            <a href="/index.html">
+                                <img src="images/logo.png" alt="Cribbage" width="150" height="70" class="img-fluid">
+                            </a>
+                        </div>
+                        <!-- END LOGO -->
+
+                        <!-- SOCIAL ICONS -->
+                        <div class="site-social-icons">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-youtube"></i></a>
+                        </div>
+                        <!-- END SOCIAL ICONS -->
+
+                        <!-- COPYRIGHT -->
+                        <div class="mt-3 d-flex justify-content-center flex-wrap copyright">
+                            <span>© 2024-25 Cribagge</span> 
+                            <span>|</span>
+                            <a href="privacy-policy.html">Privacy Policy</a> 
+                            <span>|</span>
+                            <a href="terms-conditions.html">Terms & Conditions</a>                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- END WRAPPER -->
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
